@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+
+/**
+ * @author Sean Keeley-Cain
+ *
+ */
+import java.util.*;
+import java.io.*;
+public class pwd_check {
+
+	/**
+	 * @param args
+	 * @throws FileNotFoundException 
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		DLB dictionary=new DLB();
+//		for (String s:args) {
+//			if (s.equals("-g")) {
+//				System.out.println("k");
+//			}
+//		}
+//		Scanner fileScan = new Scanner(new FileInputStream("dictionary.txt"));
+//        String st;
+//        while (fileScan.hasNext())
+//        {
+//            st = fileScan.nextLine();
+//            dictionary.addWord(st);
+//            System.out.println(st);
+//        }
+//        fileScan.close();
+		dictionary.addWord("cat");
+		dictionary.addWord("catch");
+		dictionary.addWord("bat");
+		dictionary.addWord("batter");
+		dictionary.addWord("pat");
+		dictionary.addWord("math");
+		dictionary.addWord("mat");
+		System.out.println("Good");
+		dictionary.printToFile();
+		System.out.println("Good");
+		
+	}
+
+}
